@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.yuansong.study</groupId>
+    <artifactId>mqtt-demo-parent</artifactId>
+    <version>${appversion}</version>
+  </parent>
+  <artifactId>mqtt-demo-common</artifactId>
+  <name>mqtt-demo-common</name>
+  <description>MQTT Demo Common</description>
+  <packaging>jar</packaging>
+  
+  <dependencies>
+     <!-- SpringBoot Begin -->
+     <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+     </dependency>
+     <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-configuration-processor</artifactId>
+        <optional>true</optional>
+    </dependency>
+     <!-- SpringBoot End -->
+     <!-- JSON Begin -->
+     <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>fastjson</artifactId>
+          <version>1.2.31</version>
+      </dependency>
+      <!-- JSON Begin -->
+	   <!-- MQTT Begin -->
+	   <dependency>
+	      <groupId>org.springframework.integration</groupId>
+	      <artifactId>spring-integration-stream</artifactId>
+	  </dependency>
+	  <dependency>
+	      <groupId>org.springframework.integration</groupId>
+	      <artifactId>spring-integration-mqtt</artifactId>
+	  </dependency>
+	  <!-- MQTT End -->
+	  <!-- Swagger Begin -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <!-- Swagger End -->
+  </dependencies>
+</project>

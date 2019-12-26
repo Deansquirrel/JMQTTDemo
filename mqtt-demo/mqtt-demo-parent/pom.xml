@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.yuansong.study</groupId>
+    <artifactId>mqtt-demo-dependencies</artifactId>
+    <version>${appversion}</version>
+    <relativePath>../mqtt-demo-dependencies</relativePath>
+  </parent>
+  <artifactId>mqtt-demo-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>mqtt-demo-parent</name>
+  <description>MQTT Demo Parent</description>
+  
+  <properties>
+    <main.basedir>${basedir}/..</main.basedir>
+    <projversion>${appversion}</projversion>
+  </properties>
+  <modules>
+  	<module>mqtt-demo-server</module>
+  	<module>mqtt-demo-client1</module>
+    <module>mqtt-demo-common</module>
+  </modules>
+  
+  <dependencies>
+  <!-- 
+        <dependency>
+        <groupId>org.eclipse.paho</groupId>
+        <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+        <version>1.2.0</version>
+    </dependency>
+     -->
+     
+  </dependencies>
+</project>

@@ -1,0 +1,14 @@
+{
+    "properties": [
+        {
+            "name": "mqtt.config",
+            "type": "com.yuansong.study.common.config.MqttConfig",
+            "description": "A description for 'mqtt.config'"
+        },
+        {
+            "name": "swagger.config",
+            "type": "com.yuansong.study.common.config.SwaggerConfig",
+            "description": "A description for 'swagger.config'"     
+        }
+    ]
+}
